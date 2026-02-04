@@ -1,0 +1,18 @@
+[31337]
+endpoint_url = "127.0.0.1:8545"
+
+[31337.address]
+usdc = "0x0165878A594ca255338adfa4d48449f69242Eb8F"
+admin = "0x0000000000000000000000000000000000000001"
+mockUSDC_deployer = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+polyOracleSingleImplementation = "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853"
+polyOracleFactory = "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6"
+deployer = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+polyOracleMulti = "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318"
+
+[31337.uint]
+livenessPeriod = 3600
+votingDominancePeriod = 1800
+escalationThreshold = 100000000000
+mockUSDC_deployed_at = 1770160812
+deployed_at = 1770164208

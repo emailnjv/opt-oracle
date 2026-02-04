@@ -1,0 +1,19 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+]
+dynamic_test_linking = true
+fs_permissions = [
+    { access = "read-write", path = "./deployments.toml" },
+    { access = "read", path = "./" }
+]
+
+[profile.dev]
+gas_reports = ["*"]
+sender = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+verbosity = 3
+extra_output = ["storageLayout"]
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
