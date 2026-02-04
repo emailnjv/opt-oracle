@@ -12,10 +12,11 @@ artifacts/
 docs/
 
 # Dotenv file
-.env
 
 # IDE files
 .idea
 
 # Dependencies
 .deps
+config.bat
+node_modules
