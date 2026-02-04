@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: forge-fmt-check
+        name: Forge Format Check
+        entry: forge fmt --check
+        language: system
+        pass_filenames: false
+        files: \.(sol)$
+
+      - id: forge-build
+        name: Forge Build with Sizes
+        entry: forge build --sizes
+        language: system
+        pass_filenames: false
+        files: \.(sol)$
+
+      - id: forge-test
+        name: Forge Test
+        entry: forge test -vvv
+        language: system
+        pass_filenames: false
+        files: \.(sol)$
